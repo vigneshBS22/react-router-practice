@@ -5,8 +5,8 @@ export const Home = () => {
   const navigate = useNavigate();
   return (
     <div>
-      <div className='flex h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-yellow-500'>
-        <div className='m-auto shadow-2xl bg-white rounded-2xl p-8'>
+      <div className='flex h-screen'>
+        <div className='m-auto  shadow-2xl bg-white rounded-2xl p-8'>
           <div>
             Explore delicious food items which are nutritious and healthy
           </div>

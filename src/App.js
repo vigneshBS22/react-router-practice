@@ -6,6 +6,7 @@ import { Home } from './Pages/Home';
 import { About } from './Pages/About';
 import { FoodCard } from './components/FoodCard';
 import { NotFound } from './Pages/NotFound';
+import { Contact } from './Pages/Contact';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/menu/:category' element={<Products />} />
         <Route path='/menu/:category/:embedId' element={<FoodCard />} />
         <Route path='/about' element={<About />} />
+        <Route path='/contact' element={<Contact />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
     </div>

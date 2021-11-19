@@ -29,6 +29,14 @@ export const Navbar = () => {
       >
         About
       </div>
+      <div
+        className='py-2 m-4 text-gray-600 cursor-pointer hover:text-gray-400'
+        onClick={() => {
+          navigate('/contact');
+        }}
+      >
+        Contact Us
+      </div>
     </div>
   );
 };
