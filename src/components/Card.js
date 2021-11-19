@@ -6,7 +6,7 @@ export const Card = ({ food }) => {
   return (
     <div>
       <div
-        className='flex flex-col shadow-2xl h-full m-4 rounded-lg self-center w-9/12 transform  hover:scale-105 cursor-pointer'
+        className='flex bg-white flex-col shadow-2xl h-full m-4 rounded-lg self-center w-9/12 transform  hover:scale-105 cursor-pointer'
         onClick={() => navigate(`/menu/${food.id}`)}
       >
         <img src={food.img} alt='burger-img' className='rounded-t-lg h-72' />

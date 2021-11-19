@@ -7,7 +7,7 @@ export const FoodCard = () => {
   const food = data.find((food) => food.id === +embedId);
   return (
     <div>
-      <div className='flex flex-row shadow-2xl h-full rounded-lg self-center w-9/12 m-auto mt-20'>
+      <div className='bg-white flex flex-row shadow-2xl h-full rounded-lg self-center w-9/12 m-auto mt-20'>
         <img
           src={food.img}
           alt='burger-img'

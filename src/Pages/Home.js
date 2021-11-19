@@ -18,7 +18,7 @@ export const Home = () => {
           <button
             className='rounded-2xl bg-yellow-500 hover:bg-red-300 text-white border-opacity-100 p-2 mt-2 transform hover:scale-105 hover:shadow-2xl'
             onClick={() => {
-              navigate('/products');
+              navigate('/menu');
             }}
           >
             Explore Menu
