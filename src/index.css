@@ -14,3 +14,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.active {
+  --tw-text-opacity: 1;
+  color: rgba(75, 85, 200, var(--tw-text-opacity));
+}

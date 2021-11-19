@@ -1,42 +1,39 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 
 export const Navbar = () => {
   const navigate = useNavigate();
   return (
     <div className='flex gap-4 shadow-2xl bg-white'>
-      <div
+      <NavLink
         className='p-2 m-4 text-gray-600 cursor-pointer hover:text-gray-400'
-        onClick={() => {
-          navigate('/');
-        }}
+        exact
+        activeClassName='active'
+        to='/'
       >
-        Home
-      </div>
-      <div
+        Home{' '}
+      </NavLink>
+      <NavLink
         className='py-2 m-4 text-gray-600 cursor-pointer hover:text-gray-400'
-        onClick={() => {
-          navigate('/menu');
-        }}
+        activeClassName='active'
+        to='/menu'
       >
         Menu
-      </div>
-      <div
+      </NavLink>
+      <NavLink
         className='py-2 m-4 text-gray-600 cursor-pointer hover:text-gray-400'
-        onClick={() => {
-          navigate('/about');
-        }}
+        activeClassName='active'
+        to='/about'
       >
         About
-      </div>
-      <div
+      </NavLink>
+      <NavLink
         className='py-2 m-4 text-gray-600 cursor-pointer hover:text-gray-400'
-        onClick={() => {
-          navigate('/contact');
-        }}
+        activeClassName='active'
+        to='/contact'
       >
         Contact Us
-      </div>
+      </NavLink>
     </div>
   );
 };
