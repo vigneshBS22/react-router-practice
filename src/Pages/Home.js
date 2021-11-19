@@ -21,7 +21,7 @@ export const Home = () => {
               navigate('/products');
             }}
           >
-            Explore Products
+            Explore Menu
           </button>
         </div>
       </div>
