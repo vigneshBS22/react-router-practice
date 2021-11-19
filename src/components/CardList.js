@@ -1,13 +1,16 @@
 import React from 'react';
+import { useParams } from 'react-router';
 import { Card } from './Card';
 
 export const CardList = ({ data }) => {
+  const { category } = useParams();
+  data = category ? data.find((item) => item.name === category).items : data;
   return (
-    <div className='grid grid-cols-3 h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-yellow-500'>
+    <div className='grid grid-cols-3'>
       {data.map((food) => {
         return (
           <div key={food.id}>
-            <Card food={food} />
+            <Card food={food} type={category ? 'food' : category} />
           </div>
         );
       })}

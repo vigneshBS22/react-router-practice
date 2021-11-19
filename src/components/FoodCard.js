@@ -1,10 +1,11 @@
 import React from 'react';
 import { useParams } from 'react-router';
-import { data } from '../data';
+import { data1 } from '../data';
 
 export const FoodCard = () => {
-  const { embedId } = useParams();
-  const food = data.find((food) => food.id === +embedId);
+  const { category, embedId } = useParams();
+  const item = data1.find((item) => item.name === category);
+  const food = item.items.find((food) => food.id === +embedId);
   return (
     <div>
       <div className='bg-white flex flex-row shadow-2xl h-full rounded-lg self-center w-9/12 m-auto mt-20'>
