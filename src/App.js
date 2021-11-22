@@ -2,11 +2,11 @@ import './App.css';
 import { Navbar } from './components/Navbar';
 import { Products } from './Pages/Products';
 import { Route, Routes } from 'react-router-dom';
-import { Home } from './Pages/Home';
-import { About } from './Pages/About';
+import Home from './Pages/Home';
+import About from './Pages/About';
 import { FoodCard } from './components/FoodCard';
 import { NotFound } from './Pages/NotFound';
-import { Contact } from './Pages/Contact';
+import Contact from './Pages/Contact';
 
 function App() {
   return (

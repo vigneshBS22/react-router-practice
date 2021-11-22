@@ -1,25 +1,22 @@
 import React from 'react';
 import { useNavigate } from 'react-router';
+import { HOC } from '../components/HOC';
 
-export const Home = () => {
+const Home = () => {
   const navigate = useNavigate();
   return (
-    <div>
-      <div className='flex h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-yellow-500'>
-        <div className='m-auto shadow-2xl bg-white rounded-2xl p-8'>
-          <div>
-            Explore delicious food items which are nutritious and healthy
-          </div>
-          <button
-            className='rounded-2xl bg-yellow-500 hover:bg-red-300 text-white border-opacity-100 p-2 mt-2 transform hover:scale-105 hover:shadow-2xl'
-            onClick={() => {
-              navigate('/menu');
-            }}
-          >
-            Explore Menu
-          </button>
-        </div>
-      </div>
+    <div className='mt-96'>
+      <div>Explore delicious food items which are nutritious and healthy</div>
+      <button
+        className='rounded-2xl bg-yellow-500 hover:bg-red-300 text-white border-opacity-100 p-2 mt-2 transform hover:scale-105 hover:shadow-2xl'
+        onClick={() => {
+          navigate('/menu');
+        }}
+      >
+        Explore Menu
+      </button>
     </div>
   );
 };
+
+export default HOC(Home);
